@@ -501,10 +501,18 @@ body.light-theme {
   margin-bottom: 1.5rem;
 }
 
-.skills__box {
+/* added change */
+
+/* .skills__box {
   display: flex;
   justify-content: center;
   column-gap: 2.5rem;
+} */
+.address__location{
+  margin-top: 15px;
+  text-align: center;
+  color: black;
+
 }
 
 .skills__group {
