@@ -532,18 +532,17 @@
       <!--=============== WORK ===============-->
       <section class="work section" id="work">
         <span class="section__subtitle">My Portfolio</span>
-        <h2 class="section__title">Recent Works</h2>
+        <h2 class="section__title">Recent cases</h2>
 
         <div class="work__filters">
           <span class="work__item active-work" data-filter="all">All</span>
-          <span class="work__item" data-filter=".web">Web</span>
-          <span class="work__item" data-filter=".movil">Movil</span>
-          <span class="work__item" data-filter=".design">Design</span>
+          <span class="work__item" data-filter=".web">Heart Cases</span>
+          <span class="work__item" data-filter=".movil">Lung Cases</span>
+          <span class="work__item" data-filter=".design">Kidney Cases</span>
         </div>
 
         <div class="work__container container grid">
-          <div class="work__card mix web">
-            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+          <!-- <div class="work__card mix web">
             <img src="assets/img/work1.jpg" alt="" class="work__img" />
 
             <h3 class="work__title">Web design</h3>
@@ -551,9 +550,76 @@
             <a href="" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
+          </div> -->
+
+          <!-- Heart Case 1 -->
+          <div class="work__card mix web">
+            <h3 class="work__title">Michael Johnson</h3>
+            <p>Age: 58 | Gender: Male</p>
+            <p>Medical History: Coronary Artery Disease, High Blood Pressure</p>
+            <button
+              class="work__button"
+              onclick="showDetails('Michael Johnson', 58, 'Male', 'Coronary Artery Disease, High Blood Pressure', 'Michael had a long history of high blood pressure, which eventually led to coronary artery disease. After several diagnostic tests, including an angiogram, it was revealed that his coronary arteries were severely blocked. Michael underwent a successful coronary artery bypass graft (CABG) surgery and was placed on a strict diet and exercise regime to improve his heart health.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
           </div>
 
+          <!-- Heart Case 2 -->
+          <div class="work__card mix web">
+            <h3 class="work__title">Emily Davis</h3>
+            <p>Age: 67 | Gender: Female</p>
+            <p>Medical History: Congestive Heart Failure, Hypertension</p>
+            <button
+              class="work__button"
+              onclick="showDetails('Emily Davis', 67, 'Female', 'Congestive Heart Failure, Hypertension', 'Emily was diagnosed with congestive heart failure and had been managing hypertension for years. An echocardiogram revealed a reduced ejection fraction, indicating weakened heart muscles. Emily was started on diuretics and beta-blockers to manage fluid retention and reduce blood pressure. A strict heart-healthy diet was recommended.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <!-- Heart Case 3 -->
+          <div class="work__card mix web">
+            <h3 class="work__title">David Williams</h3>
+            <p>Age: 72 | Gender: Male</p>
+            <p>Medical History: Atrial Fibrillation, Stroke</p>
+            <button
+              class="work__button"
+              onclick="showDetails('David Williams', 72, 'Male', 'Atrial Fibrillation, Stroke', 'David suffered from atrial fibrillation and experienced a minor stroke two years ago. A Holter monitor and brain MRI revealed irregular heart rhythms and minor brain damage. David was placed on anticoagulants and underwent a cardioversion procedure to restore normal heart rhythm. A comprehensive stroke rehabilitation program was also initiated.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <!-- Lung Case 1 -->
           <div class="work__card mix movil">
+            <h3 class="work__title">Sarah Williams</h3>
+            <p>Age: 45 | Gender: Female</p>
+            <p>Medical History: Chronic Asthma, Pulmonary Fibrosis</p>
+            <button
+              class="work__button"
+              onclick="showDetails('Sarah Williams', 45, 'Female', 'Chronic Asthma, Pulmonary Fibrosis', 'Sarah had been struggling with asthma for most of her life, but her condition worsened due to pulmonary fibrosis. A comprehensive pulmonary function test and CT scan confirmed the diagnosis of pulmonary fibrosis. Sarah was placed on a combination of corticosteroids and oxygen therapy. A personalized rehabilitation program was created to help manage her symptoms and improve lung capacity.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <!-- Kidney Case 1 -->
+          <div class="work__card mix design">
+            <h3 class="work__title">James Thompson</h3>
+            <p>Age: 64 | Gender: Male</p>
+            <p>
+              Medical History: Chronic Kidney Disease (CKD), Type 2 Diabetes
+            </p>
+            <button
+              class="work__button"
+              onclick="showDetails('James Thompson', 64, 'Male', 'Chronic Kidney Disease (CKD), Type 2 Diabetes', 'James had been managing diabetes for 20 years, but his kidney function started to decline due to diabetic nephropathy. Initial blood tests and kidney function tests revealed Stage 3 CKD. An immediate adjustment to his medication and diet was recommended. James was placed on a specialized renal diet and began medication to slow the progression of CKD. He was monitored closely with regular kidney function tests.')"
+            >
+              Read More <i class="bx bx-right-arrow-alt work__icon"></i>
+            </button>
+          </div>
+
+          <!-- <div class="work__card mix movil">
             <img src="assets/img/work2.jpg" alt="" class="work__img" />
 
             <h3 class="work__title">App movil</h3>
@@ -561,9 +627,9 @@
             <a href="" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
-          </div>
+          </div> -->
 
-          <div class="work__card mix design">
+          <!-- <div class="work__card mix design">
             <img src="assets/img/work3.jpg" alt="" class="work__img" />
 
             <h3 class="work__title">Brand design</h3>
@@ -571,9 +637,9 @@
             <a href="" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
-          </div>
+          </div> -->
 
-          <div class="work__card mix web">
+          <!-- <div class="work__card mix web">
             <img src="assets/img/work4.jpg" alt="" class="work__img" />
 
             <h3 class="work__title">Web design</h3>
@@ -581,9 +647,9 @@
             <a href="" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
-          </div>
+          </div> -->
 
-          <div class="work__card mix movil">
+          <!-- <div class="work__card mix movil">
             <img src="assets/img/work5.jpg" alt="" class="work__img" />
 
             <h3 class="work__title">App movil</h3>
@@ -591,8 +657,9 @@
             <a href="" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
-          </div>
+          </div> -->
         </div>
+        <div id="details-section"></div>
       </section>
 
       <!--=============== TESTIMONIALS ===============-->

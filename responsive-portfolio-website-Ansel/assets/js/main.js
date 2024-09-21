@@ -150,3 +150,28 @@ sr.reveal(`.home__social, .home__scroll`,{delay: 900, origin: 'bottom'})
 
 // // Start the typing effect
 // window.onload = typeText;
+
+//============== Show Modal ===============//
+
+function showDetails(name, age, gender, medicalHistory, summary) {
+    const detailsSection = document.getElementById('details-section');
+    
+    // Fill the modal content dynamically
+    detailsSection.innerHTML = `
+      <h2>${name}</h2>
+      <p><strong>Age:</strong> ${age}</p>
+      <p><strong>Gender:</strong> ${gender}</p>
+      <p><strong>Medical History:</strong> ${medicalHistory}</p>
+      <p>${summary}</p>
+      <button onclick="closeDetails()">Close</button>
+    `;
+  
+    // Display the modal
+    detailsSection.style.display = 'block';
+  }
+  
+  function closeDetails() {
+    const detailsSection = document.getElementById('details-section');
+    detailsSection.style.display = 'none';
+  }
+  
