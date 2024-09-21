@@ -677,6 +677,7 @@ body.light-theme {
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  width: 400px;
 }
 
 .work__img {
@@ -1181,9 +1182,9 @@ body.light-theme {
 /* Modal styling for details */
 #details-section {
   display: none;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
+  /* background-color: #fff; */
+  /* border-radius: 8px; */
+  /* padding: 20px; */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 50%;
@@ -1196,6 +1197,17 @@ body.light-theme {
 #details-section h2 {
   margin-top: 0;
 }
+
+/* added media */
+.summary_p{
+  margin: 10px 0px;
+}
+@media (max-width:700px) {
+  #details-section{
+    width: 90%;
+  }
+}
+
 
 #details-section button {
   background-color: #ff6b6b;
