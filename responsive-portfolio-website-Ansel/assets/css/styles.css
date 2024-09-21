@@ -663,6 +663,7 @@ body.light-theme {
   align-items: center;
   column-gap: 0.75rem;
   margin-bottom: 2rem;
+  padding: 0px 15px;
 }
 
 .work__item {
@@ -671,8 +672,14 @@ body.light-theme {
   padding: 0.25rem 0.75rem;
   font-weight: var(--font-medium);
   border-radius: 0.5rem;
+  text-align: center;
 }
-
+@media (max-width:500px){
+  .work__item{
+    font-size: 12px;
+    padding: 2px 7px;
+  }
+}
 .work__card {
   background-color: var(--container-color);
   padding: 1rem;
@@ -1132,7 +1139,7 @@ body.light-theme {
 
 .company-name {
   /* background-color: #a395e9; */
-  font-weight: bold;
+  font-weight: bolder;
   font-size: x-large;
 
   border-radius: 5px;
@@ -1143,7 +1150,7 @@ body.light-theme {
   display: inline-block;
   overflow: hidden; /* Ensure the animated background stays within bounds */
   font-family: "Courier New", Courier, monospace; /* Add a typing effect font */
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 /* .company-name::before {
@@ -1205,6 +1212,9 @@ body.light-theme {
 @media (max-width:700px) {
   #details-section{
     width: 90%;
+  }
+  .work__card{
+    width: 100%;
   }
 }
 
